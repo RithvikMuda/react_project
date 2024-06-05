@@ -1,0 +1,75 @@
+.Header {
+ display: flex; 
+ justify-content: space-between;
+ border: 1px solid black;
+}
+
+.Logo {
+  width: 150px;
+}
+
+.nav-items
+{
+padding: 0px 20px;
+display: flex;
+}
+.nav-items > ul {
+  display: flex;
+  font-size: 24px;
+  list-style-type: None;
+}
+
+.nav-items >ul >li {
+   
+  padding: 10px;
+  margin: 10px;
+}
+
+.res-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.res-card {
+  width: 200px;
+  height: auto;
+  padding: 5px; 
+}
+.res-card:hover{
+  cursor: pointer;
+  border: 1px solid red;
+}
+.Search{
+  padding: 10px;
+}
+.rest-logo{
+width: 100%;
+  }
+.shimmer-Container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card{
+ margin: 20px ;
+ width: 200px;
+ height: 400px;
+ background-color: #f0f0f0 ;
+}
+.filter{
+  display: flex;
+  margin: 5px;
+  
+}
+.filter-btn{
+  /* margin: 5px; */
+}
+
+.Login {
+  margin: 5px;
+  padding: 6px;
+  height: 50%;
+}
+
+.user-card{
+  border:2px solid red ;
+  /* justify-content: center; */
+}
