@@ -1,4 +1,8 @@
-.Header {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ /* .Header {
  display: flex; 
  justify-content: space-between;
  border: 1px solid black;
@@ -60,7 +64,7 @@ width: 100%;
   
 }
 .filter-btn{
-  /* margin: 5px; */
+  margin: 5px;
 }
 
 .Login {
@@ -71,5 +75,5 @@ width: 100%;
 
 .user-card{
   border:2px solid red ;
-  /* justify-content: center; */
-}
+  //justify-content: center;
+}  */

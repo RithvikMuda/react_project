@@ -5,15 +5,16 @@ const styleCard ={
  };
 const  RestaurantCard = (props) => {
     const {resData} = props;
+    // console.log(resData)
     return (
-        <div className="res-card" style={styleCard}>
+        <div data-testid="resCard" className="res-card m-4 p-4 w-[250px] rounded-lg " style={styleCard}>
             <img
-            className="rest-logo"
+            className="rest-logo rounded-lg"
             alt="rest-logo"
             src=
             { CDN_URL + resData.info.cloudinaryImageId   }
             />
-            <h3>{resData.info.name}</h3>
+            <h3 className="font-bold py-4 text-lg">{resData.info.name}</h3>
             <h4>{resData.info.cuisines.join(", ")}</h4>
             <h4>{resData.info.avgRating} rating</h4>
             <h4>{resData.info.costForTwo}</h4>
@@ -21,5 +22,16 @@ const  RestaurantCard = (props) => {
         </div>
     );
 }
+
+export const withOpenLabel = (RestaurantCard) => {
+   return (props) => {
+    return (
+        <div>
+            <label className="absolute bg-black text-white rounded-lg">Opened </label>
+            <RestaurantCard {...props} />
+        </div>
+    );
+   };
+};
 
 export default RestaurantCard;
